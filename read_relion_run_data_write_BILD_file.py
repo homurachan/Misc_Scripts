@@ -123,11 +123,11 @@ def main():
 
 	
 def parse_command_line():
-	usage="%prog <input list> <boxsize> <angle step> <output>"
+	usage="%prog <input starfile> <boxsize> <angle step> <output>"
 	parser = OptionParser(usage=usage, version="%1")
 	
 	if len(sys.argv)<5: 
-		print "<input list> <boxsize> <angle step> <output>"
+		print "<input starfile> <boxsize> <angle step> <output>"
 		sys.exit(-1)
 	
 	(options, args)=parser.parse_args()
