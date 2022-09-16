@@ -71,7 +71,8 @@ def main():
 			#		print X1,X2
 					dot_mult=dotProduct(v1=X1,v2=X2)
 					if(math.fabs(dot_mult)>1.0):
-						continue
+						sign=dot_mult/math.fabs(dot_mult)
+						dot_mult=1.0*sign
 					Distance_tmp=math.acos(dot_mult)/3.14159265359*180.0
 					if(Distance_tmp<Distance):
 						Distance=Distance_tmp
